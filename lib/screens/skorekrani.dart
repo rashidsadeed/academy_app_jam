@@ -12,7 +12,7 @@ class ScoreBoardScreen extends StatefulWidget {
 
 class _ScoreBoardScreenState extends State<ScoreBoardScreen> {
 
-  final person_list = ["Zeynep", "Raşid", "Emre", "Murat"];
+  final person_list = ["Zeynep", "Raşid", "Murat", "Emre"];
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +66,7 @@ class _ScoreBoardScreenState extends State<ScoreBoardScreen> {
                       ),
                     ),
                   ),
-                  const Text("Emre")
+                  const Text("Murat")
                 ],
               ),
             ],

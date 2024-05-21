@@ -1,18 +1,23 @@
 import 'package:academy1/screens/anaekran.dart';
+import 'package:academy1/screens/soruekrani.dart';
 import 'package:flutter/material.dart';
+
+
+
+
+
+
 
 class ResultsPageWidget extends StatefulWidget {
   const ResultsPageWidget({super.key});
+
 
   @override
   State<ResultsPageWidget> createState() => _ResultsPageWidgetState();
 }
 
 class _ResultsPageWidgetState extends State<ResultsPageWidget> {
-  int correctAnswers = 10; // replace with the actual number of correct answers
-  int incorrectAnswers = 5; // replace with the actual number of incorrect answers
-  int totalScore = 50; // replace with the actual total score
-  String reward = 'Gold Medal'; // replace with the actual reward
+
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +39,10 @@ class _ResultsPageWidgetState extends State<ResultsPageWidget> {
                   context,
                   MaterialPageRoute(builder: (context) => const HomePageWidget()),
                 );
+
+                correctAnswers = 0;
+                incorrectAnswers = 0;
+                totalScore = 0;
               },
               child: Text('Back to Home'),
             ),

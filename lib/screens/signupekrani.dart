@@ -1,15 +1,14 @@
 import 'package:academy1/screens/anaekran.dart';
-import 'package:academy1/screens/signupekrani.dart';
 import 'package:flutter/material.dart';
 
-class LoginWidget extends StatefulWidget {
-  const LoginWidget({super.key});
+class SignupPageWidget extends StatefulWidget {
+  const SignupPageWidget({super.key});
 
   @override
-  State<LoginWidget> createState() => _LoginWidgetState();
+  State<SignupPageWidget> createState() => _SignupPageWidgetState();
 }
 
-class _LoginWidgetState extends State<LoginWidget> {
+class _SignupPageWidgetState extends State<SignupPageWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,6 +25,13 @@ class _LoginWidgetState extends State<LoginWidget> {
                   image: AssetImage('assets/images/owl.png'), // replace with your image
                   fit: BoxFit.cover,
                 ),
+              ),
+            ),
+            SizedBox(height: 20), // adjust as needed
+            TextField(
+              decoration: InputDecoration(
+                labelText: 'Name',
+                border: OutlineInputBorder(),
               ),
             ),
             SizedBox(height: 20), // adjust as needed
@@ -51,16 +57,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   MaterialPageRoute(builder: (context) => const HomePageWidget()),
                 );
               },
-              child: Text('Login'),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const SignupPageWidget()),
-                );
-              },
-              child: Text('Sign-up'),
+              child: Text('Signup'),
             ),
           ],
         ),
